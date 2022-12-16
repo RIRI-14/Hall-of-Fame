@@ -7,7 +7,7 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -74,6 +74,38 @@
 .menu-icon {
   display: none;
 }
+
+
+/* Submenu */
+/* .nav-item:hover .nav__submenu{
+border: 1px solid red;
+display: block;
+} */
+
+.nav__submenu {
+  font-weight: 300;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 80px;
+    z-index: 2000;
+    right: 210px;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    color: white;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.nav__submenu-item{
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.nav__submenu-item:hover {
+    background:rgb(67, 65, 65);
+  }
+
+  
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
@@ -156,3 +188,4 @@
     transition: 250ms;
   }
 }
+

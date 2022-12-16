@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import Submenu from './Submenu.js';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -29,7 +30,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
+            Hall Of Fame
             <i class='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -41,22 +42,22 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className='nav-item' onMouseOver={ () => {
+              var side_menu = document.querySelector('.nav__submenu');
+              side_menu.style.display = "block";
+            }} 
+            onMouseLeave={
+              () => {
+                var side_menu = document.querySelector('.nav__submenu');
+              side_menu.style.display = "none";
+              }
+            }>
               <Link
-                to='/services'
+                to='/sections'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Products
+                Halls
               </Link>
             </li>
 
@@ -72,9 +73,13 @@ function Navbar() {
           </ul>
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
+      <Submenu/>
+
       </nav>
     </>
   );
 }
+
+
 
 export default Navbar;

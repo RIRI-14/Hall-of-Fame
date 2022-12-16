@@ -1,0 +1,24 @@
+.nav__submenu {
+  font-weight: 300;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 80px;
+    z-index: 2000;
+    right: 210px;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    color: white;
+    list-style: none;
+}
+
+.nav__submenu-item{
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.nav__submenu-item:hover {
+    background:rgb(67, 65, 65);
+  }
+
+
+

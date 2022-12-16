@@ -5,6 +5,10 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .home,
 .services,
 .products,
