@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, createContext } from "react";
 import "./filter.css";
 import { data } from "./data";
 import Card from "./Card";
 import Button from "./Button";
+import NavBar from "./Navbar";
+import LoginProvider from "./LoginProvider";
 
-function App() {
+
+
+
+function Cards() {
   const [cards, setCards] = useState(data);
   const cats = ["all", ...new Set(data.map((card) => card.category))];
 
@@ -18,6 +23,10 @@ function App() {
 
   return (
     <div className="App">
+
+        <LoginProvider>
+        <NavBar/>
+        </LoginProvider>
       <h1>ACHIEVEMENTS</h1>
       <Button categories={cats} handleClick={filter} />
       <Card allcards={cards} />
@@ -25,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default Cards;
