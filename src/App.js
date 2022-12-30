@@ -1,10 +1,9 @@
 import React, { useState, createContext } from "react";
-import "./filter.css";
 import { data } from "./data";
-import Card from "./Card";
-import Button from "./Button";
-import NavBar from "./Navbar";
-import LoginProvider from "./LoginProvider";
+import Card from "./components/Card";
+import Button from "./components/Button";
+import NavBar from "./components/Navbar";
+import LoginProvider from "./components/LoginProvider";
 
 
 

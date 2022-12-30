@@ -8,7 +8,7 @@
   font-family: 'Play', sans-serif;
 }
 body{
-  background: url(C:\Users\Alka\Desktop\Studyyyyy\CB\app\achi\src\images\back.jpeg);
+  background: url("./images/background.jpg");
 }
 .Cards {
   text-align: center;

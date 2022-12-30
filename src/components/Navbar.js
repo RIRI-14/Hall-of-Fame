@@ -2,9 +2,9 @@ import React , {useContext} from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import mainLogo from'./images/logo.png';
+import mainLogo from'../images/logo.png';
 import 'bootstrap/dist/css/bootstrap.css';
-import profile from "./images/girl.png"
+import profile from "../images/girl.png"
 import { useLogin } from './LoginProvider';
 
 
@@ -12,7 +12,7 @@ const Navigation=() =>{
 
   return (
     <>
-      <Navbar bg="black" variant="dark" expand="lg" className="p-3 sticky-top">
+      <Navbar variant="dark" expand="lg" className="p-3">
         <Container>
         <Navbar.Brand href="#home">
             <img
@@ -55,7 +55,7 @@ const Navigation2=() =>{
 
     return (
       <>
-        <Navbar bg="black" variant="dark" expand="lg" className="p-3 sticky-top">
+        <Navbar variant="dark" expand="lg" className="p-3">
           <Container>
           <Navbar.Brand href="#home">
               <img
