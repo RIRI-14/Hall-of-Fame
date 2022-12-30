@@ -1,36 +1,24 @@
-import React, { useState, createContext } from "react";
-import { data } from "./data";
-import Card from "./components/Card";
-import Button from "./components/Button";
-import NavBar from "./components/Navbar";
-import LoginProvider from "./components/LoginProvider";
+import React from "react";
+import Home from "./Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Achieve from './achieve';
 
 
 
 
-function Cards() {
-  const [cards, setCards] = useState(data);
-  const cats = ["all", ...new Set(data.map((card) => card.category))];
-
-  const filter = (cat) => {
-    if (cat === "all") {
-      setCards(data);
-      return;
-    }
-    setCards(data.filter((item) => item.category === cat));
-  };
-
+function App() {
   return (
     <div className="App">
 
-        <LoginProvider>
-        <NavBar/>
-        </LoginProvider>
-      <h1>ACHIEVEMENTS</h1>
-      <Button categories={cats} handleClick={filter} />
-      <Card allcards={cards} />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/achieve" element={<Achieve />} />
+        </Routes>
+      </Router>
+
     </div>
   );
 }
 
-export default Cards;
+export default App;

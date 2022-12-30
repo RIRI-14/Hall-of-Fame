@@ -65,7 +65,6 @@ const Navigation2=() =>{
                 height="50"
                 className="d-inline-block align-top"
               />{' '}
-              {/* Hall-Of-Fame */}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -75,10 +74,6 @@ const Navigation2=() =>{
               <Nav className="gap-2">
                 <Nav.Link className="btn btn-black" href="#">
                   Login
-                </Nav.Link>
-
-                <Nav.Link className="btn btn-black" href="#">
-                  SignUp
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
