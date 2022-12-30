@@ -1,36 +1,30 @@
-import React, { useState, createContext } from "react";
-import { data } from "./data";
-import Card from "./components/Card";
-import Button from "./components/Button";
-import NavBar from "./components/Navbar";
-import LoginProvider from "./components/LoginProvider";
+import React from 'react';
+import {Route, Routes} from 'react-router-dom'
+import Home from './pages/Home';
+import Signin from './pages/Signin';
+import Dashboard from './pages/Dashboard';
+import Protected from './components/Protected';
+import { AuthContextProvider } from './context/AuthContext';
 
-
-
-
-function Cards() {
-  const [cards, setCards] = useState(data);
-  const cats = ["all", ...new Set(data.map((card) => card.category))];
-
-  const filter = (cat) => {
-    if (cat === "all") {
-      setCards(data);
-      return;
-    }
-    setCards(data.filter((item) => item.category === cat));
-  };
-
+function App() {
   return (
-    <div className="App">
-
-        <LoginProvider>
-        <NavBar/>
-        </LoginProvider>
-      <h1>ACHIEVEMENTS</h1>
-      <Button categories={cats} handleClick={filter} />
-      <Card allcards={cards} />
+    <div>
+      <AuthContextProvider>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/signin' element={<Signin />} />
+        <Route 
+        path='/dashboard' 
+        element={
+        <Protected>
+          <Dashboard />
+        </Protected> 
+        } 
+      />
+      </Routes>
+      </AuthContextProvider>
     </div>
-  );
+  );  
 }
 
-export default Cards;
+export default App;
