@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import mainLogo from'../images/logo.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import profile from "../images/girl.png"
-import { useLogin } from './LoginProvider';
 
 import {UserAuth} from '../context/AuthContext'
 
@@ -51,7 +50,7 @@ const NavBar = () => {
 
                   : <Nav className="gap-2">
                     <Nav.Link className="btn btn-black" href="/signin">Login</Nav.Link>
-                    <Nav.Link className="btn btn-black" href="/Form">Form</Nav.Link> 
+                    {/* <Nav.Link className="btn btn-black" href="/Form">Form</Nav.Link>  */}
                     </Nav>
                   }
 

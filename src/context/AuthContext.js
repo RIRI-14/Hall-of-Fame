@@ -7,6 +7,7 @@ import {
     onAuthStateChanged 
 } from "firebase/auth";
 import {auth} from '../firebase';
+import { createUserCollection } from "./firestore-db";
 
 const AuthContext = createContext();
 
@@ -15,18 +16,17 @@ export const AuthContextProvider = ({children}) => {
 
     const [user, setUser] = useState({});
 
-    const googleSignIn = () => {
+    const googleSignIn = async () => {
         const provider = new GoogleAuthProvider();
 
-        // console.log(windowSize.current[0]);
+        var res = "";
         if(windowSize.current[0] > 768){
-            signInWithPopup(auth, provider);
-            
+            res = await signInWithPopup(auth, provider);
         } else {
-            signInWithRedirect(auth, provider);
+            res = await signInWithRedirect(auth, provider);
         }
-        // signInWithRedirect(auth, provider);
-        
+        const user = res.user;
+        await createUserCollection(user);
     };
 
     const logOut = () => {
