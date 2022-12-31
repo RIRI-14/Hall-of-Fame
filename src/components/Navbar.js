@@ -51,7 +51,7 @@ const NavBar = () => {
 
                   : <Nav className="gap-2">
                     <Nav.Link className="btn btn-black" href="/signin">Login</Nav.Link>
-                    <Nav.Link className="btn btn-black" href="#">SignUp</Nav.Link> 
+                    <Nav.Link className="btn btn-black" href="/Form">Form</Nav.Link> 
                     </Nav>
                   }
 

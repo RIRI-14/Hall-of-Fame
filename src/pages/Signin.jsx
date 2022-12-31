@@ -19,7 +19,7 @@ const Signin = () => {
 
 useEffect(() => {
   if(user?.displayName){
-    navigate('/dashboard');
+    navigate('/Achieve');
   }
 }, [user]);
 

@@ -7,7 +7,9 @@ function Card({ allcards }) {
         <img src={card.img} alt="" />
         <div className="card-details">
           <h2>{card.title}</h2>
-          <p>{card.desc}</p>
+          <p>Name: {card.name}</p>
+          <p>Year: {card.year}</p>
+          <p>Description: {card.desc}</p>
         </div>
       </div>
     );
