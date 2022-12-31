@@ -14,7 +14,7 @@ function App() {
       <AuthContextProvider>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/achieve' element={<Achieve />} />
+        <Route path='/achievements' element={<Achieve />} />
         <Route path='/signin' element={<Signin />} />
         <Route path='/Form' element={<Form />} />
         <Route 

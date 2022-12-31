@@ -11,15 +11,14 @@ const Signin = () => {
   const handleGoogleSignIn = async () => {
     try{
       await googleSignIn();
-      
     } catch(error){
       console.log(error)
     }
-};
+  };
 
 useEffect(() => {
   if(user?.displayName){
-    navigate('/Achieve');
+    navigate('/achievements');
   }
 }, [user]);
 
