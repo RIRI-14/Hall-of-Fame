@@ -33,7 +33,6 @@ const NavBar = () => {
                     height="50"
                     className="d-inline-block align-top"
                   />{' '}
-                  {/* Hall-Of-Fame */}
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

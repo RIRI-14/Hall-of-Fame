@@ -85,12 +85,16 @@ function Form() {
 }
 
 const techCompanies = [
-    { label: "Apple", value: 1 },
-    { label: "Facebook", value: 2 },
-    { label: "Netflix", value: 3 },
-    { label: "Tesla", value: 4 },
-    { label: "Amazon", value: 5 },
-    { label: "Alphabet", value: 6 },
+    { label: "Hackathon", value: 1 },
+    { label: "Research", value: 2 },
+    { label: "Coding Contest", value: 3 },
+    { label: "Scholarship", value: 4 },
+    { label: "Technical programs", value: 5 },
+    { label: "Quiz", value: 6 },
+    { label: "Internship", value: 7 },
+    { label: "Speaker @ conference", value: 8 },
+    { label: "Placement", value: 9 },
+    { label: "Non-Technical", value: 10 },
   ];
 
 export default Form
