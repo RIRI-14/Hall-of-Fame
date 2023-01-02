@@ -23,15 +23,17 @@ useEffect(() => {
 }, [user]);
 
   return (
+    <div className='box'>
     <main className="mainContainer">
 
-      <p className="welcomText"> Login </p> 
+      <p className="welcomeText"> Login </p> 
       <p className='text'> TO THE HALL OF FAME </p>
       
       <div>
     <GoogleButton onClick={handleGoogleSignIn} /> 
     </div>
     </main>
+    </div>
     
   );
 };
