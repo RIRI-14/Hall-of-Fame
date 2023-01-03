@@ -25,7 +25,7 @@ const NavBar = () => {
           <>
             <Navbar variant="dark" expand="lg" className="p-3">
               <Container>
-              <Navbar.Brand href="#home">
+              <Navbar.Brand >
                   <img
                     alt=""
                     src={mainLogo}
@@ -42,14 +42,17 @@ const NavBar = () => {
 
                   {user?.displayName 
                   ? <Nav className="gap-2">
+                    <Nav.Link className="btn btn-black" href="/achievements">Home</Nav.Link>
+                    <Nav.Link className="btn btn-black" href="/About">About</Nav.Link>
                     <Nav.Link className="btn btn-black" onClick={handleSignOut}>LogOut</Nav.Link>
                     <Nav.Link className="btn btn-black" href="/dashboard">
                     <img alt="" src={profile} width="40" height="40" className="d-inline-block align-top" />{' '} </Nav.Link> 
                     </Nav>
 
                   : <Nav className="gap-2">
+                    <Nav.Link className="btn btn-black" href="/achievements">Home</Nav.Link>
+                    <Nav.Link className="btn btn-black" href="/About">About</Nav.Link>
                     <Nav.Link className="btn btn-black" href="/signin">Login</Nav.Link>
-                    {/* <Nav.Link className="btn btn-black" href="/Form">Form</Nav.Link>  */}
                     </Nav>
                   }
 

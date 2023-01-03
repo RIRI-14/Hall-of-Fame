@@ -2,10 +2,10 @@
   padding :0;
   margin: 0;
   box-sizing:border-box;
-  
 }
 .Dashboard {
   text-align: center;
+  background: url(../images/background.jpg);
 }
 
 .Dashboard-logo {
@@ -104,9 +104,9 @@
   border: .25rem solid black;
 }
 .card{
-  background-color: aliceblue;
-  width: 85%;
-  height: 75%;
+  background-color: rgb(7, 7, 7);
+  width: 40vw;
+  height: 55vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -115,13 +115,13 @@
   
 }
 .cardText{
-  color: black;
+  color: white;
 }
 .cardTitle{
   color:black;
 }
 .cardImage{
-  padding-top: 20px;
+  /* padding-top: 20px; */
   width: 300px;
 }
 .list-group-flush{
