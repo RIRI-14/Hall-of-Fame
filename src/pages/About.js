@@ -1,0 +1,153 @@
+import { useState } from "react";
+import "./About.css";
+import download from '../images/logo.png';
+import hall from '../images/hall.png';
+import muskan from '../images/muskan.jpg';
+import anamika from '../images/anamika.jpg';
+import ridhi from '../images/ridhi.jpg';
+import alka from '../images/alka.jpg';
+import upasana from '../images/upasana.jpg';
+import Footer from '../components/Footer';
+import NavBar from "../components/Navbar";
+
+function Tabs() {
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
+
+  return (
+    <div>
+      < NavBar />
+      <div className="container1">
+      <div className="bloc-tabs">
+        <button
+          className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(1)}
+        >
+          Celestial Biscuit
+        </button>
+        <button
+          className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(2)}
+        >
+          Hall of Fame
+        </button>
+        <button
+          className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(3)}
+        >
+          Team
+        </button>
+      </div>
+
+      <div className="content-tabs">
+        <div
+          className={toggleState === 1 ? "content  active-content" : "content"} >
+          <img src={download} height={100} className="cbpic" />
+          <p className="cbd">
+            <b>Celestial Biscuit</b> is here to carry forward the ideology of problem solving and innovation 
+            with technology for the greater good in our minds, hearts and souls. We are a bunch of enthusiastic 
+            people from IGDTUW who are passionate about what we do and take pride in our university, our work and 
+            our profession. We are the people who believe in the fact that change is something that doesn't come 
+            just by dreaming about it but comes by working hard for it to make it a true reality.
+          </p>
+
+        </div>
+
+        <div
+          className={toggleState === 2 ? "content2  active-content" : "content"}
+        >
+          <img src={hall} height={200} className="hallpic" />
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            voluptatum qui adipisci.
+          </p>
+        </div>
+
+        <div
+          className={toggleState === 3 ? "content  active-content" : "content"}
+        >
+          <div className="flip-cardr">
+            <div className="flip-cardr-inner">
+              <div className="flip-cardr-front">
+                <img src={ridhi} className="ridhi" />
+              </div>
+              <div className="flip-cardr-back">
+                <h2 className="all">Ridhi</h2>
+                <h3 className="ridhid" >Web Developer</h3>
+                <h4 className="ridhid">Majoring in Computer Science @ IGDTUW</h4>
+
+              </div>
+            </div>
+          </div>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img src={muskan} height={280} width={250} className="muskan" />
+              </div>
+              <div class="flip-card-back">
+                <h2 className="all">Muskan</h2>
+                <h3 className="muskand">Web Developer</h3>
+                <h4 className="muskand">Majoring in Computer Science - Artificial Intelligence @ IGDTUW</h4>
+
+              </div>
+            </div>
+          </div>
+
+          <div className="flip-carda">
+            <div className="flip-carda-inner">
+              <div className="flip-carda-front">
+                <img src={anamika} height={300} width={250} className="anamika" />
+              </div>
+              <div class="flip-carda-back">
+                <h2 className="all">Anamika</h2>
+                <h3 className="anamikad">Web Developer</h3>
+                <h4 className="anamikad">Majoring in ComputerScience - Artificial Intelligence @ IGDTUW</h4>
+              </div>
+            </div>
+          </div>
+
+          <div className="flip-cardl">
+            <div className="flip-cardl-inner">
+              <div className="flip-cardl-front">
+                <img src={alka} height={300} width={300} className="alka" />
+              </div>
+              <div className="flip-cardl-back">
+                <h2 className="all">Alka</h2>
+                <h3 className="alkad">Web Developer</h3>
+                <h4 className="alkad">Majoring in Computer Science - Artificial Intelligence @ IGDTUW</h4>
+
+              </div>
+            </div>
+          </div>
+
+          <div className="flip-cardu">
+            <div className="flip-cardu-inner">
+              <div className="flip-cardu-front">
+                <img src={upasana} height={300} width={300} className="upasana" />
+              </div>
+              <div className="flip-cardu-back">
+                <h2 className="all">Upasana</h2>
+                <h3 className="upasanad">Web Developer</h3>
+                <h4 className="upasanad">Majoring in Information Technology @ IGDTUW</h4>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+export default Tabs;

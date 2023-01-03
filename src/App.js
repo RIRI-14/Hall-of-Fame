@@ -4,8 +4,9 @@ import Achieve from './pages/achieve';
 import Home from './pages/Home';
 import Signin from './pages/Signin';
 import Dashboard from './pages/Dashboard';
-import Protected from './components/Protected';
+import About from './pages/About';
 import Form from './pages/Form';
+import Protected from './components/Protected';
 import { AuthContextProvider } from './context/AuthContext';
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/achievements' element={<Achieve />} />
-        <Route path='/signin' element={<Signin />} />
+        <Route path='/About' element={<About />} />
         <Route path='/Form' element={<Form />} />
+        <Route path='/signin' element={<Signin />} />
         <Route 
         path='/dashboard' 
         element={

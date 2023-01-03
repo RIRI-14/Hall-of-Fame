@@ -17,14 +17,6 @@ body{
   border-radius: 20px;
 }
 
-.App > h1 {
-  color: aliceblue;
-  font-size: 48px;
-  text-align: center;
-  margin: 1rem 3rem;
-  padding: 1rem 0rem;
-}
-
 .all-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -125,13 +117,6 @@ border-right-color: rgba(31, 14, 14, 0.5);
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     width:70%;
-  }
-  .App > h1{
-    font-size:40px;
-margin-right:30px;
-  }
-  .App{
-    margin-right:15px;
   }
   .card-details > h2 {
     font-size: 30px;

@@ -28,7 +28,7 @@ const List=()=>{
                 <nav>
                     <div className='list'>
                         <NavLink exact to="/achievements" className="listItem" activeClassName="active">Home</NavLink>
-                        <NavLink exact to="/about" className="listItem" activeClassName="active">About</NavLink>
+                        <NavLink exact to="/About" className="listItem" activeClassName="active">About</NavLink>
                         <NavLink to="/edit" className="listItem" activeClassName="active">Edit Profile</NavLink>
                         <NavLink to="/Form" className="listItem" activeClassName="active">Add Achievements</NavLink>
                         <NavLink to="/achievements" className="listItem" activeClassName="active" onClick={handleSignOut}>Logout</NavLink>
@@ -36,7 +36,7 @@ const List=()=>{
                     </div>
                 </nav>
                 <div className='icons'>
-                    <SearchIcon className='icon'/>
+                    {/* <SearchIcon className='icon'/> */}
                     {/* <PersonIcon className='icon'/>
                     <EmailIcon className='icon'/> */}
 

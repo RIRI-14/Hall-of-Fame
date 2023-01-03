@@ -4,6 +4,8 @@ import Card from "../components/Card";
 import Button from "../components/Button";
 import NavBar from "../components/Navbar";
 import LoginProvider from "../components/LoginProvider";
+import Footer from "../components/Footer";
+import './achieve.css';
 
 
 
@@ -24,7 +26,7 @@ function Achieve() {
 
 
     return (
-        <div className="App">
+        <div className="Achieve">
 
             <LoginProvider>
                 <NavBar />
@@ -32,6 +34,10 @@ function Achieve() {
             <h1>Hall Of Fame</h1>
             <Button categories={cats} handleClick={filter} />
             <Card allcards={cards} />
+            <br />
+            <br />
+            <br />
+            <Footer />
         </div>
     );
 }
