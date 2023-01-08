@@ -1,11 +1,13 @@
-*{
-  padding :0;
+* {
+  padding: 0;
   margin: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 .Dashboard {
   text-align: center;
   background: url(../images/background.jpg);
+  font-family: "Roboto", sans-serif;
 }
 
 .Dashboard-logo {
@@ -43,7 +45,7 @@
   }
 }
 .personalInfo {
-  margin :10px;
+  margin: 10px;
   border: 0px solid black;
   border-radius: 25px;
   background-color: rgb(3, 22, 35);
@@ -51,14 +53,12 @@
   width: 21%;
   height: 80.4vh;
   color: aliceblue;
-  float:left;
+  float: left;
   position: fixed;
   font-size: 0.01rem;
-
-
 }
-.achievements{
-  margin :10px;
+.achievements {
+  margin: 10px;
   border: 0px solid black;
   border-radius: 25px;
   background-color: rgb(3, 22, 35);
@@ -68,42 +68,35 @@
   color: aliceblue;
   float: right;
   max-height: max-content;
-
-
-
 }
-.Main{
+.Main {
   display: inline-block;
-  width:100%;
+  width: 100%;
   background-color: black;
   margin-top: 65px;
   height: 1000px;
   padding: 5px;
 }
-.Navbar{
+.Navbar {
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
-  
 }
-.Info{
+.Info {
   margin-top: 40px;
 }
-.personContainer{
+.personContainer {
   border-radius: 100%;
   /* width: 150px; */
- 
-  
-
 }
-.person{
+.person {
   margin-top: 1rem;
   border-radius: 100%;
   height: 160px;
   width: 160px;
-  border: .25rem solid black;
+  border: 0.25rem solid black;
 }
-.card{
+.card {
   background-color: rgb(7, 7, 7);
   width: 40vw;
   height: 55vh;
@@ -111,19 +104,17 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-
-  
 }
-.cardText{
+.cardText {
   color: white;
 }
-.cardTitle{
-  color:black;
+.cardTitle {
+  color: black;
 }
-.cardImage{
+.cardImage {
   /* padding-top: 20px; */
   width: 300px;
 }
-.list-group-flush{
+.list-group-flush {
   color: black;
 }

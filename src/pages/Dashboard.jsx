@@ -3,7 +3,6 @@ import "./dashboard.css";
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import List from '../components/List';
-import Footer from '../components/Footer';
 import girl from '../images/girl.png';
 import { UserAuth } from "../context/AuthContext";
 
@@ -66,7 +65,6 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

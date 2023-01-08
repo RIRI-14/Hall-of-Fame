@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -29,7 +30,7 @@ font-weight:bold;
   position: relative;
   width: 500px;
   height: 500px;
-  
+  font-family: 'Roboto', sans-serif;
   margin: 70px auto 0;
   
   border: 1px solid rgba(0, 0, 0, 0.274);
@@ -53,6 +54,8 @@ font-weight:bold;
   box-sizing: content-box;
   position: relative;
   outline: none;
+  font-family: 'Roboto', sans-serif;
+  
 }
 .tabs:not(:last-child){
   border-right: 1px solid rgba(0, 0, 0, 0.274);
@@ -75,7 +78,11 @@ font-weight:bold;
   background: rgb(88, 147, 241);
 }
 
-
+.icon{
+  margin-left: 6vw;
+  margin-right:3vw;
+  margin-bottom: 5vh;
+}
 
 button {
   border: none;
@@ -91,6 +98,7 @@ button {
   width: 100%;
   height: 100%;
   display: none;
+  font-family: 'Roboto', sans-serif;
 }
 .content2 {
  /* background-color: rgb(143, 133, 178); */
@@ -99,6 +107,7 @@ button {
   height: 100%;
   display: none;
   opacity:0.9;
+  font-family: 'Roboto', sans-serif;
   
 }
 .content h2 {
@@ -137,6 +146,7 @@ img{
   background-color: transparent;
   width: 140px;
   height: 140px;
+  font-family: 'Roboto', sans-serif;
   margin-left:20px;
   margin-bottom:20px;
   display:inline-block;
