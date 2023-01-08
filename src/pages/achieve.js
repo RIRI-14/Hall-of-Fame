@@ -4,7 +4,6 @@ import Card from "../components/Card";
 import Button from "../components/Button";
 import NavBar from "../components/Navbar";
 import LoginProvider from "../components/LoginProvider";
-import Footer from "../components/Footer";
 import './achieve.css';
 
 
@@ -37,7 +36,6 @@ function Achieve() {
             <br />
             <br />
             <br />
-            <Footer />
         </div>
     );
 }
